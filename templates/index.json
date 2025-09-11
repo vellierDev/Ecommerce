@@ -25,26 +25,10 @@
             "pixel_size_mobile": 120
           },
           "blocks": {}
-        },
-        "button_3cL8kq": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "Shop now",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "link",
-            "width": "custom",
-            "custom_width": 15,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "spacer_iqNMWF",
-        "button_3cL8kq"
+        "spacer_iqNMWF"
       ],
       "name": "t:names.hero",
       "settings": {
