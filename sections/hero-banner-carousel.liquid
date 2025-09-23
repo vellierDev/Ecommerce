@@ -39,6 +39,16 @@
       "type": "image_picker",
       "id": "banner_movil_3",
       "label": "Banner Móvil 3"
+    },
+    {
+      "name": "Carrusel Banners",
+      "settings": [],
+      "presets": [
+        {
+          "name": "Carrusel Banners",
+          "category": "Banners"
+        }
+      ]
     }
   ]
 }
@@ -49,17 +59,17 @@
   <div class="carrusel carrusel-pc">
     {% if section.settings.banner_pc_1 %}
       <div class="slide">
-        {{ section.settings.banner_pc_1 | image_url: width: 1600 | image_tag: alt: "Banner PC 1" }}
+        {{ section.settings.banner_pc_1 | image_url: width: 1600 | image_tag: alt: 'Banner PC 1' }}
       </div>
     {% endif %}
     {% if section.settings.banner_pc_2 %}
       <div class="slide">
-        {{ section.settings.banner_pc_2 | image_url: width: 1600 | image_tag: alt: "Banner PC 2" }}
+        {{ section.settings.banner_pc_2 | image_url: width: 1600 | image_tag: alt: 'Banner PC 2' }}
       </div>
     {% endif %}
     {% if section.settings.banner_pc_3 %}
       <div class="slide">
-        {{ section.settings.banner_pc_3 | image_url: width: 1600 | image_tag: alt: "Banner PC 3" }}
+        {{ section.settings.banner_pc_3 | image_url: width: 1600 | image_tag: alt: 'Banner PC 3' }}
       </div>
     {% endif %}
   </div>
@@ -68,17 +78,17 @@
   <div class="carrusel carrusel-movil">
     {% if section.settings.banner_movil_1 %}
       <div class="slide">
-        {{ section.settings.banner_movil_1 | image_url: width: 800 | image_tag: alt: "Banner Móvil 1" }}
+        {{ section.settings.banner_movil_1 | image_url: width: 800 | image_tag: alt: 'Banner Móvil 1' }}
       </div>
     {% endif %}
     {% if section.settings.banner_movil_2 %}
       <div class="slide">
-        {{ section.settings.banner_movil_2 | image_url: width: 800 | image_tag: alt: "Banner Móvil 2" }}
+        {{ section.settings.banner_movil_2 | image_url: width: 800 | image_tag: alt: 'Banner Móvil 2' }}
       </div>
     {% endif %}
     {% if section.settings.banner_movil_3 %}
       <div class="slide">
-        {{ section.settings.banner_movil_3 | image_url: width: 800 | image_tag: alt: "Banner Móvil 3" }}
+        {{ section.settings.banner_movil_3 | image_url: width: 800 | image_tag: alt: 'Banner Móvil 3' }}
       </div>
     {% endif %}
   </div>
@@ -98,28 +108,36 @@
     width: 100%;
     display: block;
   }
-  .carrusel-pc { display: none; }
-  .carrusel-movil { display: none; }
+  .carrusel-pc {
+    display: none;
+  }
+  .carrusel-movil {
+    display: none;
+  }
 
   /* Mostrar solo en desktop */
   @media (min-width: 768px) {
-    .carrusel-pc { display: flex; }
+    .carrusel-pc {
+      display: flex;
+    }
   }
 
   /* Mostrar solo en móvil */
   @media (max-width: 767px) {
-    .carrusel-movil { display: flex; }
+    .carrusel-movil {
+      display: flex;
+    }
   }
 </style>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener('DOMContentLoaded', function () {
     function iniciarCarrusel(selector) {
       const carrusel = document.querySelector(selector);
       if (!carrusel) return;
 
       let index = 0;
-      const slides = carrusel.querySelectorAll(".slide");
+      const slides = carrusel.querySelectorAll('.slide');
       const total = slides.length;
 
       setInterval(() => {
@@ -128,7 +146,7 @@
       }, 1000); // 1s por slide
     }
 
-    iniciarCarrusel(".carrusel-pc");
-    iniciarCarrusel(".carrusel-movil");
+    iniciarCarrusel('.carrusel-pc');
+    iniciarCarrusel('.carrusel-movil');
   });
 </script>
