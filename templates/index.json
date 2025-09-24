@@ -106,7 +106,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>Shop by collection</h3>",
+                "text": "",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -488,47 +488,6 @@
         "color_scheme": "",
         "padding-block-start": 0,
         "padding-block-end": 0
-      }
-    },
-    "marquee_izzYrQ": {
-      "type": "marquee",
-      "blocks": {
-        "text_WDkNgd": {
-          "type": "text",
-          "settings": {
-            "text": "<p>A world of timeless designs that honor the people who make them & the places they’re made.</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-primary--family)",
-            "font_size": "var(--font-size--heading-lg)",
-            "line_height": "tight",
-            "letter_spacing": "tight",
-            "case": "none",
-            "wrap": "nowrap",
-            "color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_WDkNgd"
-      ],
-      "name": "t:names.marquee",
-      "settings": {
-        "movement_direction": "normal",
-        "color_scheme": "",
-        "padding-block-start": 48,
-        "padding-block-end": 48,
-        "gap_between_elements": 16
       }
     },
     "section_8zY7P4": {
@@ -1074,7 +1033,6 @@
     "collection_list_9jMc6r",
     "media_with_content_GRV6iJ",
     "collection_list_mcURmi",
-    "marquee_izzYrQ",
     "section_8zY7P4",
     "divider_WDCL3k",
     "product_list_4jqyPz",
