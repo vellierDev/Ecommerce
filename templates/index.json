@@ -9,6 +9,47 @@
  */
 {
   "sections": {
+    "marquee_qCJiUi": {
+      "type": "marquee",
+      "blocks": {
+        "text_FfxEPj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nueva Colección La Ville </p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h6",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "color": "var(--color-foreground-heading)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_FfxEPj"
+      ],
+      "name": "t:names.marquee_section",
+      "settings": {
+        "movement_direction": "normal",
+        "color_scheme": "",
+        "padding-block-start": 24,
+        "padding-block-end": 24,
+        "gap_between_elements": 24
+      }
+    },
     "hero_rhMed7": {
       "type": "hero",
       "blocks": {
@@ -929,6 +970,7 @@
     }
   },
   "order": [
+    "marquee_qCJiUi",
     "hero_rhMed7",
     "media_with_content_GRV6iJ",
     "collection_list_mcURmi",
