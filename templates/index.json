@@ -44,7 +44,7 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "space-between",
-        "gap": 21,
+        "gap": 0,
         "section_width": "full-width",
         "section_height": "custom",
         "section_height_custom": 100,
