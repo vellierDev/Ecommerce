@@ -49,13 +49,13 @@
         "section_height": "custom",
         "section_height_custom": 100,
         "color_scheme": "scheme-6",
-        "toggle_overlay": true,
-        "overlay_color": "",
+        "toggle_overlay": false,
+        "overlay_color": "#000000",
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "blurred_reflection": false,
         "reflection_opacity": 75,
-        "padding-block-start": 0,
+        "padding-block-start": 20,
         "padding-block-end": 48
       }
     },
