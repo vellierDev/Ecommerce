@@ -21,6 +21,8 @@
             "width": "fill",
             "custom_width": 50,
             "inherit_color_scheme": true,
+            "heading": "",
+            "heading_preset": "h3",
             "color_scheme": "",
             "border_style": "underline",
             "border_width": 1,
@@ -67,6 +69,7 @@
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
+            "placeholder": "",
             "toggle_overlay": false,
             "overlay_color": "#00000026",
             "overlay_style": "solid",
@@ -182,6 +185,7 @@
               "type": "_footer-copyright",
               "static": true,
               "settings": {
+                "show_powered_by": true,
                 "font_size": "0.75rem",
                 "case": "none"
               },
