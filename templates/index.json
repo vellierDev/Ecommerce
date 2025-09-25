@@ -241,7 +241,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>Lo mas Vendido</h3>",
+                "text": "<h3><strong>Lo mas Vendido</strong></h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -543,10 +543,11 @@
           "type": "_media-without-appearance",
           "static": true,
           "settings": {
-            "media_type": "image",
+            "media_type": "video",
             "link": "",
+            "video": "shopify://files/videos/Whisk_eto3mwmwimyygtzh1soxatotudzkrtl5ijm20yn.mp4",
             "video_loop": true,
-            "video_autoplay": false,
+            "video_autoplay": true,
             "image_position": "cover",
             "video_position": "cover"
           },
@@ -566,7 +567,7 @@
               "name": "t:names.group",
               "settings": {
                 "link": "",
-                "open_in_new_tab": false,
+                "open_in_new_tab": true,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -605,13 +606,13 @@
                   "type": "text",
                   "name": "Heading",
                   "settings": {
-                    "text": "<p>New this season</p>",
+                    "text": "<p><strong>Nueva Colección</strong></p>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
-                    "type_preset": "h2",
+                    "type_preset": "custom",
                     "font": "var(--font-primary--family)",
-                    "font_size": "",
+                    "font_size": "1.25rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -631,18 +632,18 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>A collection of inspired silhouettes crafted from the finest fibers.</p>",
-                    "width": "fit-content",
+                    "text": "<p>Descubre <em>La Ville</em>, nuestra nueva colección inspirada en las villas italianas y el glamour francés. Cada prenda refleja exclusividad, elegancia y el arte de vivir en los detalles.<br/><br/></p>",
+                    "width": "100%",
                     "max_width": "narrow",
                     "alignment": "left",
-                    "type_preset": "h2",
+                    "type_preset": "custom",
                     "font": "var(--font-primary--family)",
-                    "font_size": "",
+                    "font_size": "1.25rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
-                    "color": "",
+                    "color": "var(--color-foreground)",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -688,7 +689,7 @@
         "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -805,6 +806,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "Collection list",
       "settings": {
         "collection_list": [],
@@ -944,6 +946,7 @@
         "video_CQx9HE",
         "group_nJQwkp"
       ],
+      "disabled": true,
       "name": "Video",
       "settings": {
         "content_direction": "column",
@@ -1203,6 +1206,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "Featured collection",
       "settings": {
         "collection": "all",
