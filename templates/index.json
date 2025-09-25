@@ -37,7 +37,7 @@
         "media_type_2": "image",
         "link": "shopify://collections/all",
         "open_in_new_tab": false,
-        "content_direction": "row",
+        "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "center",
         "vertical_alignment": "center",
