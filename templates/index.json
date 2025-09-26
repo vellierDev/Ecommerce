@@ -689,7 +689,7 @@
         "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-02316dc2-bdf9-402b-b419-fb549c00c189",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -1621,12 +1621,12 @@
           "settings": {
             "width": "custom",
             "custom_width": 50,
-            "inherit_color_scheme": false,
+            "inherit_color_scheme": true,
             "heading": "",
             "heading_preset": "",
             "color_scheme": "scheme-1",
             "border_style": "all",
-            "border_width": 1,
+            "border_width": 2.5,
             "border_radius": 100,
             "input_type_preset": "",
             "style_class": "button-unstyled",
