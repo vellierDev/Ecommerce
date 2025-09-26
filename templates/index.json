@@ -1684,7 +1684,7 @@
           "name": "t:names.video",
           "settings": {
             "source": "uploaded",
-            "video": "shopify://files/videos/Whisk_iwy0ygmyydm1ytm00czmjdotejm0qtljbjz00so.mp4",
+            "video": "shopify://files/videos/Video Vellier.mp4",
             "video_autoplay": true,
             "video_loop": true,
             "alt": "",
