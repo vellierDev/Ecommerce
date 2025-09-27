@@ -1783,6 +1783,7 @@
               "type": "icon",
               "settings": {
                 "icon": "eye",
+                "image_upload": "shopify://shop_images/truck-solid-full.svg",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -1933,6 +1934,7 @@
               "type": "icon",
               "settings": {
                 "icon": "heart",
+                "image_upload": "shopify://shop_images/location-dot-solid-full.svg",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -2083,6 +2085,7 @@
               "type": "icon",
               "settings": {
                 "icon": "silhouette",
+                "image_upload": "shopify://shop_images/crown-solid-full.svg",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -2233,6 +2236,7 @@
               "type": "icon",
               "settings": {
                 "icon": "silhouette",
+                "image_upload": "shopify://shop_images/earth-americas-solid-full.svg",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
