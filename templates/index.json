@@ -1777,6 +1777,14 @@
         "padding-block-start": 32,
         "padding-block-end": 32
       }
+    },
+    "banner_responsive_U8rfDM": {
+      "type": "banner-responsive",
+      "name": "Banner Responsive",
+      "settings": {
+        "image_pc": "shopify://shop_images/Banne-Hero.jpg",
+        "banner_link": ""
+      }
     }
   },
   "order": [
@@ -1792,6 +1800,7 @@
     "media_with_content_aF6TTD",
     "product_list_TdCKyj",
     "section_aeJcyg",
-    "section_gpi8wf"
+    "section_gpi8wf",
+    "banner_responsive_U8rfDM"
   ]
 }
