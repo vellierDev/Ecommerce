@@ -594,7 +594,7 @@
                     "text": "<p>Descubre <em>La Ville</em>, nuestra nueva colección inspirada en las villas italianas y el glamour francés. Cada prenda refleja exclusividad, elegancia y el arte de vivir en los detalles.<br/><br/></p>",
                     "width": "100%",
                     "max_width": "narrow",
-                    "alignment": "left",
+                    "alignment": "center",
                     "type_preset": "custom",
                     "font": "var(--font-primary--family)",
                     "font_size": "1.25rem",
