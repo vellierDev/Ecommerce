@@ -1,0 +1,73 @@
+{% schema %}
+{
+  "name": "Banner Responsive",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_pc",
+      "label": "Imagen para PC (desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_tablet",
+      "label": "Imagen para Tablet"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Imagen para Móvil"
+    },
+    {
+      "type": "url",
+      "id": "banner_link",
+      "label": "Enlace del banner",
+      "default": "#"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner Responsive",
+      "category": "Banners"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="banner-responsive">
+  <a href="{{ section.settings.banner_link }}">
+    <picture>
+      {% if section.settings.image_mobile != blank %}
+        <source
+          media="(max-width: 767px)"
+          srcset="{{ section.settings.image_mobile | image_url: width: 800 }}"
+        >
+      {% endif %}
+
+      {% if section.settings.image_tablet != blank %}
+        <source
+          media="(max-width: 1024px)"
+          srcset="{{ section.settings.image_tablet | image_url: width: 1200 }}"
+        >
+      {% endif %}
+
+      {% if section.settings.image_pc != blank %}
+        <img
+          src="{{ section.settings.image_pc | image_url: width: 2000 }}"
+          alt="Banner"
+          width="{{ section.settings.image_pc.width }}"
+          height="{{ section.settings.image_pc.height }}"
+          class="w-full h-auto"
+        >
+      {% endif %}
+    </picture>
+  </a>
+</div>
+
+<style>
+  .banner-responsive img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0; /* cámbialo si quieres esquinas redondeadas */
+  }
+</style>
