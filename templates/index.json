@@ -2131,7 +2131,7 @@
                 "text_BfpJMX": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Pioneros del “Old Money Style”</p>",
+                    "text": "<p>Old Money Style</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -2306,7 +2306,7 @@
                 "text_WVME6A": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Dos sedes: Colombia y Nueva York</p>",
+                    "text": "<p>Con sedes en Bogotá y Nueva York, con plan de expansión hacia otros mercados.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
