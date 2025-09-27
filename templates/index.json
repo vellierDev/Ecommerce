@@ -9,54 +9,12 @@
  */
 {
   "sections": {
-    "hero_rhMed7": {
-      "type": "hero",
-      "blocks": {
-        "spacer_iqNMWF": {
-          "type": "spacer",
-          "name": "t:names.spacer",
-          "settings": {
-            "size": "percent",
-            "percent_size": 0,
-            "pixel_size": 36,
-            "custom_mobile_size": false,
-            "size_mobile": "percent",
-            "percent_size_mobile": 100,
-            "pixel_size_mobile": 120
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "spacer_iqNMWF"
-      ],
-      "name": "t:names.hero",
+    "banner_responsive_63qJxa": {
+      "type": "banner-responsive",
+      "name": "Banner Responsive",
       "settings": {
-        "media_type_1": "image",
-        "image_1": "shopify://shop_images/Banne-Hero.jpg",
-        "media_type_2": "image",
-        "link": "shopify://collections/all",
-        "open_in_new_tab": false,
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "center",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "space-between",
-        "gap": 0,
-        "section_width": "page-width",
-        "section_height": "custom",
-        "section_height_custom": 100,
-        "color_scheme": "scheme-1",
-        "toggle_overlay": false,
-        "overlay_color": "#000000",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 20,
-        "padding-block-end": 48
+        "image_pc": "shopify://shop_images/Banne-Hero.jpg",
+        "banner_link": ""
       }
     },
     "collection_list_9jMc6r": {
@@ -1777,20 +1735,10 @@
         "padding-block-start": 32,
         "padding-block-end": 32
       }
-    },
-    "banner_responsive_U8rfDM": {
-      "type": "banner-responsive",
-      "name": "Banner Responsive",
-      "settings": {
-        "image_pc": "shopify://shop_images/Banne-Hero.jpg",
-        "image_tablet": "shopify://shop_images/Banne-Hero.jpg",
-        "image_mobile": "shopify://shop_images/Banne-Hero.jpg",
-        "banner_link": ""
-      }
     }
   },
   "order": [
-    "hero_rhMed7",
+    "banner_responsive_63qJxa",
     "collection_list_9jMc6r",
     "product_list_xx9E6W",
     "product_recommendations_XtxxfF",
@@ -1802,7 +1750,6 @@
     "media_with_content_aF6TTD",
     "product_list_TdCKyj",
     "section_aeJcyg",
-    "section_gpi8wf",
-    "banner_responsive_U8rfDM"
+    "section_gpi8wf"
   ]
 }
