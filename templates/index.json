@@ -1783,6 +1783,8 @@
       "name": "Banner Responsive",
       "settings": {
         "image_pc": "shopify://shop_images/Banne-Hero.jpg",
+        "image_tablet": "shopify://shop_images/Banne-Hero.jpg",
+        "image_mobile": "shopify://shop_images/Banne-Hero.jpg",
         "banner_link": ""
       }
     }
