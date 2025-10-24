@@ -20,299 +20,16 @@
         "padding-block-end": 80
       }
     },
-    "section_wVWwXC": {
+    "section_47XFLH": {
       "type": "section",
       "blocks": {
-        "image_aMj4j7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/QuienesSomos1.jpg",
-            "link": "",
-            "image_ratio": "portrait",
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "group_DRY9Up": {
-          "type": "group",
-          "settings": {
-            "link": "",
-            "open_in_new_tab": false,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "placeholder": "",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_mKTJne": {
-              "type": "text",
-              "settings": {
-                "text": "<p><br/>Vellier no es solo una marca; es el resultado de un sueño que comenzó a tomar forma en 2023. Una visión que nació del deseo de crear una moda distinta: silenciosa, elegante y cargada de estatus… sin necesidad de gritarlo. Desde el primer día, este camino ha sido construido por un apasionado del estilo <em>old-money.E</em>n 2025 Vellier florece como una propuesta auténtica. Una marca que apuesta por la elegancia, el glamour y la comodidad con prendas de alta calidad accesibles para quienes entienden que la verdadera sofisticación está en los detalles.<br/><br/></p>",
-                "width": "100%",
-                "max_width": "none",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_mKTJne"
-          ]
-        }
-      },
-      "block_order": [
-        "image_aMj4j7",
-        "group_DRY9Up"
-      ],
-      "name": "t:names.image_with_text",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-2",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
-      }
-    },
-    "section_HgD8PN": {
-      "type": "section",
-      "blocks": {
-        "group_aJbK7K": {
-          "type": "group",
-          "settings": {
-            "link": "",
-            "open_in_new_tab": false,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "placeholder": "",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_EdYhbN": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h2>Nuestro Fundador</h2>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_ELpgaH": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Detrás de Vellier se encuentra un joven empresario cuya visión ha desafiado las corrientes ruidosas de la moda contemporánea. Desde temprana edad, desarrolló una fascinación por la elegancia silenciosa: aquella que no necesita ostentación para hacerse notar. Su pasión no nació de la extravagancia, sino del arte de lo esencial; de comprender que una prenda sobria, bien hecha y con carácter, puede comunicar más que mil logotipos.</p><p>Soñó con crear una marca que evocara el poder del estilo clásico, la autenticidad de lo discreto y la fuerza de lo atemporal. Hoy, ese sueño se materializa en Belial, una casa que rescata la belleza de la sencillez y devuelve el valor al detalle.</p><p>Él prefiere permanecer detrás de las telas, dejando que cada prenda hable por sí misma. Porque para el fundador de Vellier, la verdadera elegancia no se muestra: <strong>se percibe.</strong></p>",
-                "width": "fit-content",
-                "max_width": "none",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_EdYhbN",
-            "text_ELpgaH"
-          ]
-        },
-        "image_zqE8gU": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/fUNDADOR.jpg",
-            "link": "",
-            "image_ratio": "square",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "group_aJbK7K",
-        "image_zqE8gU"
-      ],
-      "name": "t:names.image_with_text",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-47e2da75-e694-4959-8715-d25dabb6365d",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
-      }
-    },
-    "section_qW4LeK": {
-      "type": "section",
-      "blocks": {
-        "text_nx9kTi": {
+        "text_tFTM7R": {
           "type": "text",
-          "name": "t:names.text",
+          "name": "t:names.heading",
           "settings": {
-            "text": "<p><br/>“Cada prenda debe tener el poder de moverse con quien la lleva, no para ser vista, sino para ser recordada.”</p><p><br/>— <em>Fundador de Vellier</em><br/><br/></p>",
+            "text": "<h1><strong>Términos y condiciones</strong></h1>",
             "width": "fit-content",
-            "max_width": "normal",
+            "max_width": "none",
             "alignment": "left",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
@@ -331,10 +48,80 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "text_4748YV": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h3>A. RESTRICCIONES DE USO</h3><p>Todo el contenido visible y audible en el sitio <a>https://www.vellier.com</a> —incluyendo, entre otros, imágenes, diseño del sitio, ilustraciones, gráficos, fotografías, tipografía y composición— constituye propiedad intelectual exclusiva de <strong>Vellier</strong>.<br/><br/>El contenido del sitio está destinado únicamente para el <strong>uso personal y no comercial</strong> de los usuarios.</p><p>Podrás descargar, imprimir o guardar porciones del contenido de este sitio bajo las siguientes condiciones:</p><ul><li><br/>Que el uso sea personal y sin fines comerciales.<br/></li><li><br/>Que no se copie, reproduzca ni difunda el contenido en ningún medio.<br/></li><li><br/>Que no se altere, modifique ni se eliminen marcas registradas o signos distintivos.<br/></li></ul><p><strong>Vellier</strong> es una marca registrada. Ningún derecho, título o interés sobre el contenido, diseño o materiales del sitio será transferido al usuario por dichas actividades.<br/><br/>Vellier conserva todos los derechos de propiedad intelectual sobre el contenido descargado, impreso, reproducido, redistribuido o almacenado desde este sitio.</p><p>Todos los contenidos del sitio web son propiedad exclusiva y mundial de <strong>Vellier</strong>, incluyendo, sin limitación: reproducciones de artículos, diseño gráfico, logos, imágenes, textos, ilustraciones, fotografías, marcas, signos distintivos y software de funcionamiento y desarrollo.</p><p>La reproducción, distribución, comunicación pública, puesta a disposición, transformación o cualquier otro tipo de explotación del contenido —sin autorización expresa y por escrito de Vellier— queda <strong>estrictamente prohibida</strong>.</p><p>Vellier no concede ninguna licencia ni autorización de uso sobre sus derechos de propiedad intelectual e industrial ni sobre cualquier otra propiedad o derecho relacionado con el sitio, sus productos o servicios.</p><p>En caso de que el usuario facilite datos o contenidos en el sitio web (como reseñas, comentarios o interacciones), concede a Vellier un <strong>derecho no exclusivo, libre de regalías, perpetuo, irrevocable y transferible</strong> para usar, reproducir, modificar, adaptar, publicar, traducir, crear obras derivadas, distribuir y exhibir dichos contenidos en cualquier medio.<br/><br/>El usuario declara que dichos contenidos no vulneran derechos de terceros y asume toda responsabilidad frente a ello, liberando a Vellier de cualquier reclamación derivada.</p><p>Todas las marcas, logotipos y nombres comerciales exhibidos en el sitio son propiedad registrada de <strong>Vellier</strong>.</p><h3><strong>B. POLÍTICA DE PRECIOS</strong></h3><p>En <a>https://www.vellier.com</a>, nuestro compromiso es ofrecer <strong>comodidad, exclusividad y una experiencia de compra premium</strong> con precios justos y coherentes con la calidad y el diseño de nuestras piezas.</p><p>Los productos ofrecidos en línea pueden tener precios iguales o distintos a los de nuestros puntos físicos o boutiques, según promociones o ediciones especiales.</p><h3><strong>C. COLORES Y MODELOS DE PRENDAS</strong></h3><p>En <strong>Vellier</strong> hacemos un esfuerzo por representar fielmente los colores y texturas de nuestras prendas. No obstante, los tonos pueden variar según la calibración del monitor o dispositivo del usuario.<br/><br/>Por ello, <strong>Vellier no garantiza</strong> que los colores visualizados en pantalla se ajusten con precisión absoluta al producto real.</p><h3><strong>D. COMUNICACIÓN</strong></h3><p>Vellier podrá comunicarse contigo a través de <strong>correo electrónico, avisos en el sitio web o correspondencia física</strong> enviada a la dirección registrada en tu cuenta o pedido.</p><h3><strong>E. ACEPTACIÓN DE TÉRMINOS Y CONDICIONES</strong></h3><p>Al acceder y utilizar el sitio web <a>https://www.vellier.com</a>, aceptas estar sujeto a estos <strong>Términos y Condiciones</strong>, así como a todas las leyes aplicables.<br/><br/>El presente documento se regirá e interpretará de conformidad con la <strong>legislación colombiana</strong>.</p><h3><strong>F. USO DEL SITIO</strong></h3><p>Está <strong>estrictamente prohibido</strong> acosar, usar lenguaje ofensivo, publicar contenido inapropiado o realizar suplantaciones de identidad dentro del sitio o en sus canales asociados.</p><p>Asimismo, está prohibido cargar o distribuir cualquier contenido ilegal, difamatorio, obsceno o que infrinja derechos de terceros.<br/><br/>Vellier se reserva el derecho de restringir o eliminar el acceso a usuarios que incumplan estas disposiciones.</p><p>Para una mejor experiencia de navegación, recomendamos el uso de <strong>navegadores actualizados</strong>, como Firefox 37.0 o superior, y Chrome 41.0 o superior.</p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_xa4WV7": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h3><strong>G. ENLACES A TERCEROS</strong></h3><p>Con el fin de ofrecer valor adicional a nuestros visitantes, <strong>Vellier</strong> puede incluir enlaces a sitios de terceros. Sin embargo, no ejercemos control alguno sobre dichos sitios ni sobre sus políticas de privacidad.<br/><br/>Por tanto, <strong>Vellier no asume responsabilidad alguna</strong> por el contenido, prácticas o acciones de estos terceros.</p><h3><strong>H. RESPONSABILIDAD</strong></h3><p>El sitio web y sus contenidos se proporcionan “<strong>tal cual</strong>” y sin garantías de ningún tipo, explícitas o implícitas.<br/><br/>Vellier no garantiza que el sitio esté libre de errores, interrupciones o virus, ni que los contenidos sean siempre exactos o actualizados.<br/><br/>Estas limitaciones se aplicarán en la medida permitida por la ley colombiana.</p><h3><strong>I. POLÍTICAS DE ENVÍO</strong></h3><p>En <strong>Vellier</strong>, trabajamos para garantizar entregas seguras y oportunas.<br/><br/>Si el pedido llega a la dirección indicada y no hay nadie disponible para recibirlo, la transportadora estará autorizada para dejarlo en la portería o punto de seguridad del edificio.<br/><br/>En ese caso, <strong>Vellier se considerará exento de responsabilidad</strong> por la entrega.</p><p>Los tiempos de entrega son los siguientes:</p><ul><li><strong>Ciudades principales:</strong> 1 a 3 días hábiles.<br/></li><li><strong>Ciudades intermedias:</strong> 3 a 5 días hábiles.<br/></li><li><strong>Otras zonas:</strong> 5 a 15 días hábiles.<br/></li></ul><p>Durante eventos promocionales (como Black Friday, Hot Sale, o lanzamientos especiales), los tiempos podrán extenderse hasta 3 días hábiles adicionales.</p><p>En todo caso, <strong>Vellier garantiza la entrega dentro del plazo máximo de 30 días calendario</strong>, según el Estatuto del Consumidor colombiano.</p><h3><strong>J. REVERSIÓN DE PAGO</strong></h3><p>De acuerdo con el <strong>Estatuto del Consumidor colombiano</strong>, el cliente tiene derecho a solicitar la <strong>reversión del pago</strong> en compras realizadas mediante canales electrónicos cuando:</p><ul><li>Sea víctima de fraude o transacción no solicitada.<br/></li><li>El producto no llegue dentro de los 30 días calendario.<br/></li><li>El producto entregado no corresponda al solicitado o presente defectos.<br/></li></ul><p>Las solicitudes pueden realizarse a través de:</p><ul><li>Formulario web: <a>https://www.vellier.com/pqr</a><br/></li><li>Correo: <a><strong>servicioalcliente@vellier.com</strong></a><br/></li><li>Línea de atención: 01-8000-XXXXXX<br/></li></ul><p>El usuario dispone de <strong>5 días hábiles</strong> desde la fecha en que conoció el inconveniente para radicar su solicitud.<br/><br/>Una vez aprobada, la reversión se realizará en un plazo máximo de <strong>15 días calendario</strong>.</p><h3><strong>K. DERECHO DE RETRACTO</strong></h3><p>El <strong>Derecho de Retracto</strong> permite al consumidor desistir de la compra realizada por medios no presenciales, dentro de los <strong>5 días hábiles siguientes a la entrega del producto</strong>.</p><p>Condiciones:</p><ul><li>El producto debe estar en perfecto estado, sin uso, con etiquetas intactas y sin rastros de desodorante, maquillaje o alteraciones.<br/></li><li>Debe conservar su empaque y estar tal como fue recibido.<br/></li><li>Aplica únicamente para compras realizadas a través del <strong>sitio web o canal WhatsApp de Vellier</strong>, no en tiendas físicas.<br/></li></ul><p>Una vez Vellier reciba el producto en óptimas condiciones y la información bancaria del cliente, realizará la devolución del dinero en un plazo máximo de <strong>15 días calendario</strong>.</p><h3><strong>Consideraciones adicionales:</strong></h3><ul><li>Si el usuario realiza el envío del producto directamente, deberá asumir los costos del transporte.<br/></li><li>Si el envío es coordinado por Vellier, el valor del servicio de recogida será asumido por el cliente.<br/></li><li>La devolución se realizará únicamente por el valor del producto (no incluye costos de envío).</li></ul>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_8ccFmf": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop now",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "text_nx9kTi"
+        "text_tFTM7R",
+        "text_4748YV",
+        "text_xa4WV7",
+        "button_8ccFmf"
       ],
       "name": "t:names.rich_text_section",
       "settings": {
@@ -345,11 +132,11 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 1,
-        "section_width": "full-width",
-        "section_height": "custom",
-        "section_height_custom": 27,
-        "color_scheme": "scheme-2",
+        "gap": 25,
+        "section_width": "page-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "color_scheme": "",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -361,15 +148,13 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 48,
+        "padding-block-end": 48
       }
     }
   },
   "order": [
     "main",
-    "section_wVWwXC",
-    "section_HgD8PN",
-    "section_qW4LeK"
+    "section_47XFLH"
   ]
 }
