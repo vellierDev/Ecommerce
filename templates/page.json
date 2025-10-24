@@ -194,7 +194,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Our signature product.</h2>",
+                "text": "<h2>Nuestro Fundador</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -219,9 +219,9 @@
             "text_ELpgaH": {
               "type": "text",
               "settings": {
-                "text": "<p>Made with care and unconditionally loved by our customers, this signature bestseller exceeds all expectations.</p>",
+                "text": "<p>Detrás de Vellier se encuentra un joven empresario cuya visión ha desafiado las corrientes ruidosas de la moda contemporánea. Desde temprana edad, desarrolló una fascinación por la elegancia silenciosa: aquella que no necesita ostentación para hacerse notar. Su pasión no nació de la extravagancia, sino del arte de lo esencial; de comprender que una prenda sobria, bien hecha y con carácter, puede comunicar más que mil logotipos.</p><p>Soñó con crear una marca que evocara el poder del estilo clásico, la autenticidad de lo discreto y la fuerza de lo atemporal. Hoy, ese sueño se materializa en Belial, una casa que rescata la belleza de la sencillez y devuelve el valor al detalle.</p><p>Él prefiere permanecer detrás de las telas, dejando que cada prenda hable por sí misma. Porque para el fundador de Vellier, la verdadera elegancia no se muestra: <strong>se percibe.</strong></p>",
                 "width": "fit-content",
-                "max_width": "narrow",
+                "max_width": "none",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
@@ -286,7 +286,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-75b5da12-b9e3-43ac-973a-c07b6346c9d2",
+        "color_scheme": "scheme-47e2da75-e694-4959-8715-d25dabb6365d",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
