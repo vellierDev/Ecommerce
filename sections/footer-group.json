@@ -75,11 +75,11 @@
               },
               "blocks": {}
             },
-            "menu_qxhQKM": {
+            "menu_mzyYzi": {
               "type": "menu",
               "name": "t:names.menu",
               "settings": {
-                "menu": "",
+                "menu": "comunidad",
                 "heading": "Comunidad",
                 "menu_spacing": 8,
                 "show_as_accordion": false,
@@ -96,19 +96,19 @@
               },
               "blocks": {}
             },
-            "menu_mzyYzi": {
+            "menu_U9YWhD": {
               "type": "menu",
               "name": "t:names.menu",
               "settings": {
-                "menu": "",
-                "heading": "About us",
+                "menu": "t-rminos-legal",
+                "heading": "Términos legales",
                 "menu_spacing": 8,
                 "show_as_accordion": false,
                 "accordion_icon": "caret",
                 "accordion_dividers": false,
                 "inherit_color_scheme": true,
                 "color_scheme": "",
-                "heading_preset": "h4",
+                "heading_preset": "h3",
                 "link_preset": "h5",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -141,8 +141,8 @@
           },
           "block_order": [
             "menu_yyxUYc",
-            "menu_qxhQKM",
             "menu_mzyYzi",
+            "menu_U9YWhD",
             "menu_EAAyz6"
           ]
         },
