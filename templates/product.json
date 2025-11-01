@@ -358,7 +358,7 @@
                 "accordion_row_XMFatY": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "Care & Maintenance",
+                    "heading": "Cuidados",
                     "open_by_default": false,
                     "icon": "none",
                     "width": 20
@@ -367,9 +367,9 @@
                     "text_wbGpVU": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>To maintain the beauty and integrity of your purchase, we recommend treating it with care. Simple maintenance practices, such as gentle washing and proper storage, can effectively preserve the longevity of your favorites. We encourage you to refer to the care instructions included with each item, designed to help you keep your purchase in top condition.</p>",
+                        "text": "<ul><li>Lavar a mano o en ciclo delicado con agua fría</li><li>No usar blanqueador</li><li>Secar a la sombra</li></ul>",
                         "width": "100%",
-                        "max_width": "normal",
+                        "max_width": "none",
                         "alignment": "left",
                         "type_preset": "rte",
                         "font": "var(--font-primary--family)",
