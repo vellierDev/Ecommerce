@@ -132,6 +132,31 @@
                   },
                   "blocks": {}
                 },
+                "text_afx8kx": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>{{ closest.product.description }}</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
                 "group_b7xNnM": {
                   "type": "group",
                   "name": "t:names.group",
@@ -179,8 +204,8 @@
                         "show_sale_price_first": true,
                         "show_installments": false,
                         "show_tax_info": false,
-                        "type_preset": "h6",
-                        "width": "fit-content",
+                        "type_preset": "h3",
+                        "width": "100%",
                         "alignment": "left",
                         "font": "var(--font-body--family)",
                         "font_size": "1rem",
@@ -188,7 +213,7 @@
                         "letter_spacing": "normal",
                         "case": "none",
                         "color": "var(--color-foreground)",
-                        "padding-block-start": 0,
+                        "padding-block-start": 13,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
                         "padding-inline-end": 0
@@ -216,6 +241,7 @@
               },
               "block_order": [
                 "product_title_7VVz8U",
+                "text_afx8kx",
                 "group_b7xNnM"
               ]
             },
@@ -293,7 +319,7 @@
                 "accordion_row_TbgNUF": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "Product Details",
+                    "heading": "Descripción",
                     "open_by_default": false,
                     "icon": "none",
                     "width": 20
