@@ -397,7 +397,7 @@
                 "accordion_row_kmdwc8": {
                   "type": "_accordion-row",
                   "settings": {
-                    "heading": "Size & Fit",
+                    "heading": "Talla",
                     "open_by_default": false,
                     "icon": "none",
                     "width": 20
@@ -406,7 +406,7 @@
                     "text_hYWKPd": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Our products are crafted to fit true to size, ensuring that you can confidently select your usual size with ease. Whether you’re looking for a relaxed or tailored fit, our designs are made to complement your unique shape and style.</p>",
+                        "text": "<ul><li><strong>Fit:</strong> Regular – ligeramente amplio en hombros y cuerpo.</li><li><strong>Talla recomendada:</strong> Selecciona tu talla habitual para un ajuste clásico o una talla más para un look relajado.</li><li><strong>Largo:</strong> estándar, con pretina acanalada que define la forma.</li><li><strong>Modelo de referencia:</strong> usa talla M.</li></ul>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
