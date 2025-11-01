@@ -135,9 +135,9 @@
                 "text_afx8kx": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>{{ closest.product.description }}</p>",
+                    "text": "{{ closest.product.description }}",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-primary--family)",
@@ -328,7 +328,7 @@
                     "text_n6TMzy": {
                       "type": "text",
                       "settings": {
-                        "text": "<ul><li>Color: Marfil (<em>Marmo Avorio</em>)</li><li>Cuello tipo polo con cierre metálico</li><li>Bordado frontal en hilo verde botella</li><li>Puños y basta acanalados con franjas verdes</li><li>Logo “V” Vellier bordado en manga</li><li>Fit estructurado y cómodo</li><li>Composición: 80% algodón / 20% poliéster</li></ul>",
+                        "text": "<ul><li>Color: Marfil (<em>Marmo Avorio</em>)</li><li>Cuello tipo polo con cierre metálico</li><li>Bordado frontal en hilo verde botella</li><li>Puños y pretina rib con franjas verdes</li><li>Logo “V” Vellier bordado en manga</li><li>Fit estructurado y cómodo</li><li>Composición: 80% algodón / 20% poliéster</li></ul>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
