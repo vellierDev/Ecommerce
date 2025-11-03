@@ -367,7 +367,7 @@
                     "text_wbGpVU": {
                       "type": "text",
                       "settings": {
-                        "text": "<ul><li>Lavar a mano o en ciclo delicado con agua fría</li><li>No usar blanqueador</li><li>Secar a la sombra</li></ul>",
+                        "text": "<p>{{ closest.product.metafields.custom.cuidados | metafield_tag }}</p>",
                         "width": "100%",
                         "max_width": "none",
                         "alignment": "left",
