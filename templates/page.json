@@ -311,9 +311,9 @@
           "name": "t:names.text",
           "settings": {
             "text": "<p><br/>“Cada prenda debe tener el poder de moverse con quien la lleva, no para ser vista, sino para ser recordada.”</p><p><br/>— <em>Fundador de Vellier</em><br/><br/></p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
