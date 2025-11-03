@@ -406,7 +406,7 @@
                     "text_hYWKPd": {
                       "type": "text",
                       "settings": {
-                        "text": "<ul><li><strong>Fit:</strong> Regular – ligeramente amplio en hombros y cuerpo.</li><li><strong>Talla recomendada:</strong> Selecciona tu talla habitual para un ajuste clásico o una talla más para un look relajado.</li><li><strong>Largo:</strong> estándar, con pretina acanalada que define la forma.</li><li><strong>Modelo de referencia:</strong> usa talla M.</li></ul>",
+                        "text": "<p>{{ closest.product.metafields.custom.tallas | metafield_tag }}</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
