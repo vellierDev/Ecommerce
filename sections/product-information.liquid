@@ -69,13 +69,58 @@
       </div>
     {% endcapture %}
 
-    {% capture details %}
+{% capture details %}
+  {% content_for 'block',
+    type: '_product-details',
+    id: 'product-details',
+    closest.product: closest.product
+  %}
+
+  <!-- Acordeón de Detalles / Cuidados / Tallas -->
+  <div class="product-accordion mt-6">
+    <!-- DETALLES -->
+    <div class="accordion-item">
+      <button class="accordion-toggle">
+        <span>Detalles</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        {{ product.description }}
+      </div>
+    </div>
+
+    <!-- CUIDADOS -->
+    <div class="accordion-item">
+      <button class="accordion-toggle">
+        <span>Cuidados</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        {{ product.metafields.custom.cuidados }}
+      </div>
+    </div>
+
+    <!-- TALLAS -->
+    <div class="accordion-item">
+      <button class="accordion-toggle">
+        <span>Tallas</span>
+        <span class="accordion-icon">+</span>
+      </button>
+      <div class="accordion-content">
+        {{ product.metafields.custom.tallas }}
+      </div>
+    </div>
+  </div>
+{% endcapture %}
+
+
+    {% comment %} {% capture details %}
       {% content_for 'block',
         type: '_product-details',
         id: 'product-details',
         closest.product: closest.product
       %}
-    {% endcapture %}
+    {% endcapture %} {% endcomment %}
 
     {% for block in render_order_array %}
       {% if block == 'media' and product_has_media %}
