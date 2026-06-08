@@ -1,0 +1,610 @@
+{% comment %} Vellier Hero — Hero editorial de lujo para Vellier {% endcomment %}
+
+{%- liquid
+  assign fetch_priority = 'auto'
+  if section.index == 1
+    assign fetch_priority = 'high'
+  endif
+
+  # Evaluamos las variables booleanas con estructuras IF tradicionales para evitar errores del linter
+  assign has_desktop_image = false
+  if section.settings.image_desktop != blank
+    assign has_desktop_image = true
+  endif
+
+  assign has_mobile_image = false
+  if section.settings.image_mobile != blank
+    assign has_mobile_image = true
+  endif
+
+  assign has_video = false
+  if section.settings.video != blank and section.settings.media_type == 'video'
+    assign has_video = true
+  endif
+
+  assign letter_spacing = section.settings.title_letter_spacing | divided_by: 100.0
+
+  case section.settings.content_position
+    when 'top'
+      assign v_align = 'flex-start'
+    when 'bottom'
+      assign v_align = 'flex-end'
+    else
+      assign v_align = 'center'
+  endcase
+
+  case section.settings.content_horizontal
+    when 'left'
+      assign h_align = 'flex-start'
+      assign text_align = 'left'
+    when 'right'
+      assign h_align = 'flex-end'
+      assign text_align = 'right'
+    else
+      assign h_align = 'center'
+      assign text_align = 'center'
+  endcase
+-%}
+
+<section
+  id="VellierHero-{{ section.id }}"
+  class="vellier-hero"
+  style="
+    --vhero-height-desktop: {{ section.settings.height_desktop }}px;
+    --vhero-height-tablet:  {{ section.settings.height_tablet }}svh;
+    --vhero-height-mobile:  {{ section.settings.height_mobile }}svh;
+    --vhero-v-align:        {{ v_align }};
+    --vhero-h-align:        {{ h_align }};
+    --vhero-text-align:     {{ text_align }};
+    --vhero-text-color:     {{ section.settings.text_color }};
+    --vhero-title-desktop:  {{ section.settings.title_size }}px;
+    --vhero-title-mobile:   {{ section.settings.title_size_mobile }}px;
+    --vhero-subtitle:       {{ section.settings.subtitle_size }}px;
+    --vhero-padding:        {{ section.settings.content_padding }}px;
+    --vhero-letter-spacing: {{ letter_spacing }}em;
+  "
+>
+  {%- comment -%}——— MEDIA ———{%- endcomment -%}
+  <div class="vellier-hero__media" aria-hidden="true">
+    {%- if has_video -%}
+      <div class="vellier-hero__video-wrap">
+        {%- if section.settings.video.preview_image != blank -%}
+          {{
+            section.settings.video.preview_image
+            | image_url: width: 3840
+            | image_tag:
+              class: 'vellier-hero__poster',
+              alt: '',
+              fetchpriority: fetch_priority,
+              widths: '750, 1100, 1500, 1920, 2560',
+              sizes: '100vw'
+          }}
+        {%- endif -%}
+        {{
+          section.settings.video
+          | video_tag:
+            autoplay: true,
+            loop: true,
+            muted: true,
+            controls: false,
+            poster: null,
+            class: 'vellier-hero__video'
+        }}
+      </div>
+
+    {%- elsif has_desktop_image -%}
+      {{
+        section.settings.image_desktop
+        | image_url: width: 3840
+        | image_tag:
+          class: 'vellier-hero__image{% if has_mobile_image %} vellier-hero__image--desktop{% endif %}',
+          alt: section.settings.image_desktop.alt
+        | default: '', fetchpriority: fetch_priority, widths: '750, 1100, 1500, 1920, 2560, 3840', sizes: '100vw'
+      }}
+      {%- if has_mobile_image -%}
+        {{
+          section.settings.image_mobile
+          | image_url: width: 1100
+          | image_tag: class: 'vellier-hero__image vellier-hero__image--mobile', alt: section.settings.image_mobile.alt
+          | default: '', fetchpriority: fetch_priority, widths: '375, 550, 750, 1100', sizes: '100vw'
+        }}
+      {%- endif -%}
+
+    {%- else -%}
+      {{ 'hero-apparel-1' | placeholder_svg_tag: 'vellier-hero__image vellier-hero__placeholder' }}
+    {%- endif -%}
+
+    {%- if section.settings.enable_overlay -%}
+      <div
+        class="vellier-hero__overlay"
+        style="
+          {%- if section.settings.overlay_style == 'gradient' -%}
+            background: linear-gradient({{ section.settings.gradient_direction }}, {{ section.settings.overlay_color }} 0%, transparent 65%);
+          {%- else -%}
+            background: {{ section.settings.overlay_color }};
+          {%- endif -%}
+        "
+      ></div>
+    {%- endif -%}
+  </div>
+
+  {%- comment -%}——— CONTENT ———{%- endcomment -%}
+  <div class="vellier-hero__content">
+    <div class="vellier-hero__inner">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="vellier-hero__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.title != blank -%}
+        <h2 class="vellier-hero__title">{{ section.settings.title | escape }}</h2>
+      {%- endif -%}
+
+      {%- if section.settings.subtitle != blank -%}
+        <p class="vellier-hero__subtitle">{{ section.settings.subtitle | escape }}</p>
+      {%- endif -%}
+
+      {%- if section.settings.button_1_label != blank or section.settings.button_2_label != blank -%}
+        <div class="vellier-hero__buttons">
+          {%- if section.settings.button_1_label != blank -%}
+            <a
+              href="{{ section.settings.button_1_link | default: '#' }}"
+              class="vellier-hero__btn vellier-hero__btn--{{ section.settings.button_style }}"
+            >
+              <span>{{ section.settings.button_1_label | escape }}</span>
+            </a>
+          {%- endif -%}
+          {%- if section.settings.button_2_label != blank -%}
+            <a
+              href="{{ section.settings.button_2_link | default: '#' }}"
+              class="vellier-hero__btn vellier-hero__btn--{{ section.settings.button_style }}"
+            >
+              <span>{{ section.settings.button_2_label | escape }}</span>
+            </a>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% stylesheet %}
+  .vellier-hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: var(--vhero-v-align, center);
+    justify-content: var(--vhero-h-align, center);
+    height: var(--vhero-height-mobile, 90svh);
+    min-height: 420px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .vellier-hero {
+      height: var(--vhero-height-tablet, 65svh);
+      min-height: 520px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .vellier-hero {
+      height: var(--vhero-height-desktop, 800px);
+      min-height: 600px;
+      max-height: 1000px;
+    }
+  }
+
+  .vellier-hero__media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .vellier-hero__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+  }
+
+  .vellier-hero__image--desktop {
+    display: none;
+  }
+  .vellier-hero__image--mobile {
+    display: block;
+  }
+
+  @media screen and (min-width: 750px) {
+    .vellier-hero__image--desktop {
+      display: block;
+    }
+    .vellier-hero__image--mobile {
+      display: none;
+    }
+  }
+
+  .vellier-hero__placeholder {
+    width: 100%;
+    height: 100%;
+  }
+
+  .vellier-hero__video-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .vellier-hero__poster,
+  .vellier-hero__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .vellier-hero__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .vellier-hero__content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    padding: var(--vhero-padding, 48px) clamp(24px, 6vw, 100px);
+    display: flex;
+    align-items: var(--vhero-v-align, center);
+    justify-content: var(--vhero-h-align, center);
+    pointer-events: none;
+  }
+
+  .vellier-hero__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: var(--vhero-h-align, center);
+    gap: clamp(10px, 1.5vw, 20px);
+    pointer-events: auto;
+    text-align: var(--vhero-text-align, center);
+    animation: vhero-fade-up 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  }
+
+  @keyframes vhero-fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .vellier-hero__eyebrow {
+    margin: 0;
+    color: var(--vhero-text-color, #fff);
+    font-size: clamp(9px, 0.7vw, 11px);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 400;
+    opacity: 0.85;
+    font-family: var(--font-primary--family, sans-serif);
+  }
+
+  .vellier-hero__title {
+    margin: 0;
+    color: var(--vhero-text-color, #fff);
+    font-size: var(--vhero-title-mobile, 42px);
+    font-family: var(--font-accent--family, serif);
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.05;
+    letter-spacing: var(--vhero-letter-spacing, 0em);
+  }
+
+  @media screen and (min-width: 750px) {
+    .vellier-hero__title {
+      font-size: var(--vhero-title-desktop, 72px);
+    }
+  }
+
+  .vellier-hero__subtitle {
+    margin: 0;
+    color: var(--vhero-text-color, #fff);
+    font-size: var(--vhero-subtitle, 16px);
+    font-family: var(--font-primary--family, sans-serif);
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+
+  .vellier-hero__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 40px;
+    align-items: center;
+    justify-content: var(--vhero-h-align, center);
+    margin-top: clamp(8px, 1.5vw, 20px);
+  }
+
+  .vellier-hero__btn {
+    display: inline-flex;
+    align-items: center;
+    color: var(--vhero-text-color, #fff);
+    text-decoration: none;
+    font-size: clamp(9px, 0.7vw, 11px);
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-family: var(--font-primary--family, sans-serif);
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+  }
+
+  .vellier-hero__btn:hover {
+    opacity: 0.6;
+  }
+
+  .vellier-hero__btn--underline span {
+    padding-bottom: 2px;
+    border-bottom: 1px solid currentColor;
+  }
+
+  .vellier-hero__btn--outline {
+    border: 1px solid currentColor;
+    padding: 13px 28px;
+    letter-spacing: 0.15em;
+  }
+
+  .vellier-hero__btn--filled {
+    background-color: var(--vhero-text-color, #fff);
+    color: #1a1a1a;
+    padding: 14px 32px;
+    letter-spacing: 0.15em;
+  }
+
+  .vellier-hero__btn--filled:hover {
+    opacity: 0.85;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Vellier Hero",
+  "tag": "section",
+  "class": "vellier-hero-wrapper",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    { "type": "header", "content": "Media" },
+    {
+      "type": "select",
+      "id": "media_type",
+      "label": "Tipo de media",
+      "options": [
+        { "value": "image", "label": "Imagen" },
+        { "value": "video", "label": "Video" }
+      ],
+      "default": "image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_desktop",
+      "label": "Imagen escritorio",
+      "info": "Recomendado: 1920 × 800 px",
+      "visible_if": "{{ section.settings.media_type == 'image' }}"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Imagen móvil (opcional)",
+      "info": "Si no se sube, se usa la imagen de escritorio. Recomendado: 750 × 900 px.",
+      "visible_if": "{{ section.settings.media_type == 'image' }}"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Video",
+      "info": "Autoplay, loop, sin sonido.",
+      "visible_if": "{{ section.settings.media_type == 'video' }}"
+    },
+    { "type": "header", "content": "Overlay" },
+    { "type": "checkbox", "id": "enable_overlay", "label": "Activar overlay", "default": true },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Color del overlay",
+      "alpha": true,
+      "default": "#00000066",
+      "visible_if": "{{ section.settings.enable_overlay }}"
+    },
+    {
+      "type": "select",
+      "id": "overlay_style",
+      "label": "Estilo del overlay",
+      "options": [
+        { "value": "gradient", "label": "Gradiente (recomendado)" },
+        { "value": "solid", "label": "Sólido uniforme" }
+      ],
+      "default": "gradient",
+      "visible_if": "{{ section.settings.enable_overlay }}"
+    },
+    {
+      "type": "select",
+      "id": "gradient_direction",
+      "label": "Dirección del gradiente",
+      "options": [
+        { "value": "to top", "label": "Desde abajo" },
+        { "value": "to bottom", "label": "Desde arriba" },
+        { "value": "to right", "label": "Desde la izquierda" },
+        { "value": "to left", "label": "Desde la derecha" }
+      ],
+      "default": "to top",
+      "visible_if": "{{ section.settings.enable_overlay and section.settings.overlay_style == 'gradient' }}"
+    },
+    { "type": "header", "content": "Contenido" },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Texto eyebrow",
+      "info": "Texto pequeño encima del título. Ej: NUEVA COLECCIÓN",
+      "placeholder": "NUEVA COLECCIÓN"
+    },
+    { "type": "text", "id": "title", "label": "Título", "default": "Mediterranea" },
+    { "type": "text", "id": "subtitle", "label": "Subtítulo", "default": "Colección Cápsula High Summer" },
+    { "type": "color", "id": "text_color", "label": "Color del texto", "default": "#ffffff" },
+    { "type": "header", "content": "Tipografía" },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Tamaño título — escritorio",
+      "min": 36,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "title_size_mobile",
+      "label": "Tamaño título — móvil",
+      "min": 24,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "default": 42
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Tamaño subtítulo",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "title_letter_spacing",
+      "label": "Espaciado de letras del título",
+      "info": "Cada punto = 0.01em de espaciado extra",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "default": 0
+    },
+    { "type": "header", "content": "Botones" },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Estilo de los botones",
+      "options": [
+        { "value": "underline", "label": "Subrayado — estilo luxury" },
+        { "value": "outline", "label": "Contorno rectangular" },
+        { "value": "filled", "label": "Relleno sólido" }
+      ],
+      "default": "underline"
+    },
+    { "type": "text", "id": "button_1_label", "label": "Botón 1 — texto", "default": "COLECCIÓN MUJER" },
+    { "type": "url", "id": "button_1_link", "label": "Botón 1 — enlace" },
+    { "type": "text", "id": "button_2_label", "label": "Botón 2 — texto", "default": "COLECCIÓN HOMBRE" },
+    { "type": "url", "id": "button_2_link", "label": "Botón 2 — enlace" },
+    { "type": "header", "content": "Layout y dimensiones" },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "Posición vertical del contenido",
+      "options": [
+        { "value": "top", "label": "Arriba" },
+        { "value": "center", "label": "Centro" },
+        { "value": "bottom", "label": "Abajo" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "content_horizontal",
+      "label": "Alineación horizontal",
+      "options": [
+        { "value": "left", "label": "Izquierda" },
+        { "value": "center", "label": "Centro" },
+        { "value": "right", "label": "Derecha" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "content_padding",
+      "label": "Padding vertical del contenido",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "height_desktop",
+      "label": "Altura escritorio",
+      "info": "El estándar Vellier es 800 px",
+      "min": 400,
+      "max": 1000,
+      "step": 10,
+      "unit": "px",
+      "default": 800
+    },
+    {
+      "type": "range",
+      "id": "height_tablet",
+      "label": "Altura tablet (% del viewport)",
+      "min": 40,
+      "max": 100,
+      "step": 5,
+      "default": 65
+    },
+    {
+      "type": "range",
+      "id": "height_mobile",
+      "label": "Altura móvil (% del viewport)",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "default": 90
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vellier Hero",
+      "category": "Vellier",
+      "settings": {
+        "media_type": "image",
+        "enable_overlay": true,
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "overlay_color": "#00000066",
+        "title": "Mediterranea",
+        "subtitle": "Colección Cápsula High Summer",
+        "text_color": "#ffffff",
+        "title_size": 72,
+        "title_size_mobile": 42,
+        "subtitle_size": 16,
+        "button_style": "underline",
+        "button_1_label": "COLECCIÓN MUJER",
+        "button_2_label": "COLECCIÓN HOMBRE",
+        "content_position": "center",
+        "content_horizontal": "center",
+        "content_padding": 48,
+        "height_desktop": 800,
+        "height_tablet": 65,
+        "height_mobile": 90
+      }
+    }
+  ]
+}
+{% endschema %}
